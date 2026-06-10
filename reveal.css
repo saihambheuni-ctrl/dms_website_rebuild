@@ -1,0 +1,35 @@
+/* ============================================================
+   Rise-up text reveal (coffee-tech "Our Approach" style)
+   Headings rise from behind a mask; supporting content fades up.
+   ============================================================ */
+
+/* masked rise — used on headings */
+.rise { display: block; overflow: hidden; padding-bottom: 0.2em; margin-bottom: -0.2em; }
+.rise > .rise-i {
+  display: block;
+  transform: translateY(116%);
+  transition: transform 1.05s cubic-bezier(.19,1,.22,1);
+  transition-delay: var(--rd, 0ms);
+  will-change: transform;
+}
+.rise.in > .rise-i { transform: translateY(0); }
+
+/* fade-rise — used on eyebrows, paragraphs, chips, buttons, stats */
+.r-up {
+  opacity: 0; transform: translateY(28px);
+  transition: opacity .9s cubic-bezier(.19,1,.22,1), transform .9s cubic-bezier(.19,1,.22,1);
+  transition-delay: var(--rd, 0ms); will-change: transform, opacity;
+}
+.r-up.in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise > .rise-i { transform: none !important; }
+  .r-up { opacity: 1 !important; transform: none !important; }
+}
+
+/* prevent above-fold flash before reveal.js initializes */
+.pre-anim .hero h1,
+.pre-anim .hero-badge,
+.pre-anim .hero-sub,
+.pre-anim .hero-cta,
+.pre-anim .hero-rating { visibility: hidden; }

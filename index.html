@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Digital Marketing School — Take the Next Step with Confidence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="sections.css" />
+<link rel="stylesheet" href="reveal.css" />
+<link rel="stylesheet" href="apply-modal.css" />
+<script>
+  /* Gate above-fold text so it doesn't flash before reveal.js wraps it */
+  document.documentElement.classList.add('pre-anim');
+  addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () { document.documentElement.classList.remove('pre-anim'); }, 2500);
+  });
+</script>
+<!-- Resources referenced in JS (image-slot reads src via getAttribute) — lifted for the offline bundler -->
+<meta name="ext-resource-dependency" content="assets/fig/photo-why.png" data-resource-id="photoWhy" />
+<meta name="ext-resource-dependency" content="assets/fig/photo-testimonial.png" data-resource-id="photoTesti" />
+<style>
+  :root {
+    --hero-img: url('assets/fig/photo-why.png');
+    --ribbon-img: url('assets/fig/photo-course.png');
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== INTRO GATE ===================== -->
+<div id="gate">
+  <video class="gate-video" id="gate-video" autoplay muted loop playsinline preload="auto" poster="assets/fig/photo-why.png">
+    <source src="assets/hero-bg.mp4" type="video/mp4" />
+  </video>
+  <div class="gate-veil"></div>
+  <div class="gate-inner">
+    <div class="gate-kicker">Digital Marketing School · Milton Keynes</div>
+    <h1 class="gate-title">Earn Recognised UK Qualifications.<br />Advance Your Career</h1>
+    <p class="gate-sub">Study Business, Computing, Health &amp; Social Care, and Digital Marketing through flexible learning pathways designed to help you progress to university, employment, or professional growth.</p>
+    <div class="gate-enter" id="gate-enter" data-cursor="Enter" data-cursor-variant="light">
+      <div class="gate-ring"></div>
+      <span>Enter<small>The Campus</small></span>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+  <a class="brand" href="#top">
+    <img class="brand-logo" src="assets/dms-logo.png" alt="Digital Marketing School" />
+  </a>
+  <div class="nav-links">
+    <a class="nav-flip" href="#programmes"><span data-text="Study at DMS">Study at DMS</span></a>
+    <a class="nav-flip" href="#why"><span data-text="Life at DMS">Life at DMS</span></a>
+    <a class="nav-flip" href="#about"><span data-text="About Us">About Us</span></a>
+    <a class="nav-flip" href="#get-in-touch"><span data-text="Contact">Contact</span></a>
+    <div class="nav-more">
+      <button class="nav-more-btn" id="nav-more-btn" aria-haspopup="true" aria-expanded="false">More <svg class="nm-chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="nav-dropdown" role="menu">
+        <a href="#" role="menuitem">Blogs <span class="nd-arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+        <a href="#" role="menuitem">Alumni <span class="nd-arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+        <a href="#" role="menuitem">Events <span class="nd-arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+        <div class="nd-sep"></div>
+        <a href="#" role="menuitem">Staff Portal <span class="nd-arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+        <a href="#" role="menuitem">Student Portal <span class="nd-arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-right">
+    <a class="nav-search" href="#" aria-label="Search" id="nav-search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    </a>
+    <button type="button" class="btn nav-cta" id="open-apply" data-cursor="Apply" data-cursor-variant="orange"><span>Apply / Enquire</span></button>
+  </div>
+  </div>
+</nav>
+
+<!-- ===================== PAGE (lifts to reveal footer) ===================== -->
+<div class="page-main" id="page-main">
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-bg-word">DMS</div>
+  <div class="hero-dots">
+    <i style="left:6%;top:18%;background:#F47D28"></i>
+    <i style="left:14%;top:62%;background:#CECEFF"></i>
+    <i style="left:48%;top:8%;background:#48D18A"></i>
+    <i style="right:40%;top:74%;background:#EA3F48"></i>
+    <i style="right:8%;top:30%;background:#F47D28"></i>
+    <i style="right:18%;top:88%;background:#3F6BFF"></i>
+    <i style="left:30%;top:40%;background:#AD40ED"></i>
+  </div>
+  <div class="wrap hero-grid">
+    <!-- LEFT: media -->
+    <div class="hero-visual reveal">
+      <div class="hero-photo">
+        <image-slot id="hero-photo" shape="rect" fit="cover" src="assets/fig/photo-why.png" placeholder="Drop a campus photo"></image-slot>
+      </div>
+      <div class="hero-float">
+        <div class="hf-ic">£</div>
+        <div><b>£23.6M</b><small>funded learning delivered</small></div>
+      </div>
+      <div class="hero-ribbon"></div>
+      <div class="hero-rating">
+        <div class="avatars">
+          <i style="background-image:url('assets/fig/photo-testimonial.png')"></i>
+          <i style="background:linear-gradient(135deg,#2C2D71,#5b5cc4)"></i>
+          <i style="background:linear-gradient(135deg,#F47D28,#ffb27a)"></i>
+          <i style="background:linear-gradient(135deg,#48D18A,#9be8c2)"></i>
+        </div>
+        <div class="divider"></div>
+        <div>
+          <div><span class="r-num">4.8</span> <span class="stars">★★★★★</span></div>
+          <div class="r-sub">verified feedback on reviewhub.com</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: content + multi-step lead capture -->
+    <div class="hero-copy">
+      <div class="hero-badge reveal">
+        <span class="hb-pill">UKPRN 10091640</span>
+        <span>UK Registered Provider · <b>OTHM &amp; NCC accredited</b></span>
+      </div>
+      <h1 class="reveal d1">Your <span class="hl-orange">Career Growth</span><br />&amp; Professional Success.</h1>
+      <p class="hero-sub reveal d2">Tell us where you want to go — we'll build your route and send a tailored prospectus in under a minute.</p>
+
+      <div class="lead reveal d3" id="lead">
+        <div class="lead-head">
+          <div class="lead-head-row">
+            <span class="lead-eyebrow" id="lead-eyebrow">Start your application</span>
+            <span class="lead-count"><b id="lead-cur">01</b> / 03</span>
+          </div>
+          <div class="lead-bar"><i id="lead-bar-fill"></i></div>
+          <h3 class="lead-title" id="lead-title">What would you like to study?</h3>
+        </div>
+
+        <div class="lead-body">
+          <!-- STEP 1 — interest -->
+          <div class="lead-step active" data-step="0">
+            <button class="lead-opt" data-value="Business Studies" data-cursor="Select"><span class="lo-label">Business Studies</span><span class="lo-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+            <button class="lead-opt" data-value="Health &amp; Social Care" data-cursor="Select"><span class="lo-label">Health &amp; Social Care</span><span class="lo-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+            <button class="lead-opt" data-value="Computing" data-cursor="Select"><span class="lo-label">Computing</span><span class="lo-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+            <button class="lead-opt" data-value="Digital Marketing" data-cursor="Select"><span class="lo-label">Digital Marketing</span><span class="lo-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+          </div>
+
+          <!-- STEP 2 — level -->
+          <div class="lead-step" data-step="1">
+            <button class="lead-opt" data-value="Level 3 — Foundation" data-cursor="Select"><span class="lo-label">Level 3 <em>· Foundation</em></span><span class="lo-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+            <button class="lead-opt" data-value="Level 4 — Certificate" data-cursor="Select"><span class="lo-label">Level 4 <em>· Certificate</em></span><span class="lo-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+            <button class="lead-opt" data-value="Level 5 — Diploma" data-cursor="Select"><span class="lo-label">Level 5 <em>· Diploma</em></span><span class="lo-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+            <button class="lead-opt" data-value="Not sure yet" data-cursor="Select"><span class="lo-label">Help me decide</span><span class="lo-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+          </div>
+
+          <!-- STEP 3 — details -->
+          <div class="lead-step" data-step="2">
+            <div class="lead-field">
+              <label for="lead-name">Full name</label>
+              <input id="lead-name" type="text" autocomplete="name" placeholder="e.g. Sara Khan" data-cursor="Type" />
+            </div>
+            <div class="lead-field">
+              <label for="lead-email">Email address</label>
+              <input id="lead-email" type="email" autocomplete="email" placeholder="you@email.com" data-cursor="Type" />
+              <span class="lead-error" id="lead-error">Please enter a valid email address.</span>
+            </div>
+            <button class="btn btn-primary lead-submit" id="lead-submit" data-cursor="Send" data-cursor-variant="orange"><span>Get my prospectus <i class="btn-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></button>
+          </div>
+
+          <!-- SUCCESS -->
+          <div class="lead-step lead-done" data-step="3">
+            <div class="lead-check"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+            <h4>You're all set, <span id="lead-name-out">there</span>.</h4>
+            <p id="lead-summary">Your prospectus is on its way. An admissions advisor will be in touch shortly.</p>
+            <button class="lead-restart" id="lead-restart" data-cursor="Restart"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v4h4"/></svg> Start over</button>
+          </div>
+        </div>
+
+        <div class="lead-foot">
+          <button class="lead-back" id="lead-back" data-cursor="Back"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Back</button>
+          <span class="lead-trust"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> No spam · GDPR compliant</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== STATS ===================== -->
+<section class="stats wrap">
+  <div class="stats-inner reveal">
+    <div class="stat">
+      <div class="s-num">25<em>K+</em></div>
+      <div class="s-label">Students mentored</div>
+      <div class="s-desc">across the UK and overseas</div>
+    </div>
+    <div class="stat">
+      <div class="s-num">100<em>K</em></div>
+      <div class="s-label">Guided study hours</div>
+      <div class="s-desc">delivered every academic year</div>
+    </div>
+    <div class="stat">
+      <div class="s-num">98<em>%</em></div>
+      <div class="s-label">Progression rate</div>
+      <div class="s-desc">to employment or higher study</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOUNDER ===================== -->
+<section class="section founder" id="founder">
+  <div class="wrap founder-grid">
+    <div class="founder-media reveal">
+      <div class="founder-photo">
+        <image-slot id="founder-photo" shape="rect" fit="cover" placeholder="Drop founder photo"></image-slot>
+      </div>
+    </div>
+    <div class="founder-copy">
+      <div class="eyebrow reveal">A message from our founder</div>
+      <p class="founder-quote reveal d1">At Digital Marketing School <span class="fq-ribbon" aria-hidden="true"></span> <span class="fq-mute">(DMS), we believe education should create opportunities, build confidence, and drive career growth.</span> Our industry-focused programmes combine expert guidance with practical learning <span class="fq-mute">to help you succeed in today's digital economy.</span></p>
+      <div class="founder-sign reveal d2">
+        <span class="fs-name">Founder &amp; Director</span>
+        <span class="fs-org">Digital Marketing School</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COURSES (was Our Advantages) ===================== -->
+<section class="section advantages" id="programmes">
+  <div class="wrap">
+    <div class="adv-head reveal">
+      <div>
+        <div class="eyebrow">The Catalogue</div>
+        <h2>Find the course that fits <em>your ambition</em></h2>
+      </div>
+      <p class="adv-sub">Flexible start dates, 100% coursework assessment, and dedicated tutor support on every programme.</p>
+    </div>
+
+    <div class="adv-viewport">
+      <div class="adv-track" id="adv-track">
+        <article class="adv-card featured" data-cursor="Explore">
+          <div class="adv-top">
+            <span class="adv-tag">Business</span>
+            <span class="adv-arrow-tr"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </div>
+          <h3 class="adv-title">OTHM Level 3 Diploma in Business Studies</h3>
+          <p class="adv-desc">Build core commercial fluency across strategy, finance and operations — assessed entirely by coursework.</p>
+          <div class="adv-bottom">
+            <span class="adv-num">01</span>
+            <a class="adv-btn" href="#"><span class="adv-btn-label">Learn More</span><span class="adv-btn-ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+          </div>
+        </article>
+
+        <article class="adv-card" data-cursor="Explore">
+          <div class="adv-top">
+            <span class="adv-tag">Health &amp; Social Care</span>
+            <span class="adv-arrow-tr"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </div>
+          <h3 class="adv-title">OTHM Level 4 Diploma in Health &amp; Social Care</h3>
+          <p class="adv-desc">Develop person-centred practice and safeguarding expertise for a career in care and wellbeing.</p>
+          <div class="adv-bottom">
+            <span class="adv-num">02</span>
+            <a class="adv-btn" href="#"><span class="adv-btn-label">Learn More</span><span class="adv-btn-ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+          </div>
+        </article>
+
+        <article class="adv-card" data-cursor="Explore">
+          <div class="adv-top">
+            <span class="adv-tag">Computing</span>
+            <span class="adv-arrow-tr"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </div>
+          <h3 class="adv-title">NCC Level 3 Diploma in Computing</h3>
+          <p class="adv-desc">A practical foundation in programming, networks and systems — your launchpad into a tech degree.</p>
+          <div class="adv-bottom">
+            <span class="adv-num">03</span>
+            <a class="adv-btn" href="#"><span class="adv-btn-label">Learn More</span><span class="adv-btn-ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+          </div>
+        </article>
+
+        <article class="adv-card" data-cursor="Explore">
+          <div class="adv-top">
+            <span class="adv-tag">Digital Marketing</span>
+            <span class="adv-arrow-tr"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </div>
+          <h3 class="adv-title">OTHM Level 4 Diploma in Digital Marketing</h3>
+          <p class="adv-desc">Master modern marketing — SEO, social, analytics and campaigns that convert and grow brands.</p>
+          <div class="adv-bottom">
+            <span class="adv-num">04</span>
+            <a class="adv-btn" href="#"><span class="adv-btn-label">Learn More</span><span class="adv-btn-ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+          </div>
+        </article>
+
+        <article class="adv-card" data-cursor="Explore">
+          <div class="adv-top">
+            <span class="adv-tag">Business</span>
+            <span class="adv-arrow-tr"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </div>
+          <h3 class="adv-title">OTHM Level 5 Diploma in Business Management</h3>
+          <p class="adv-desc">Step up to leadership — strategy, operations and people management for senior roles.</p>
+          <div class="adv-bottom">
+            <span class="adv-num">05</span>
+            <a class="adv-btn" href="#"><span class="adv-btn-label">Learn More</span><span class="adv-btn-ic"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="adv-nav reveal">
+      <button class="adv-navbtn" id="adv-prev" aria-label="Previous courses" data-cursor="Prev" disabled><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+      <button class="adv-navbtn" id="adv-next" aria-label="More courses" data-cursor="Next"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY (testimonial-style slider) ===================== -->
+<section class="section why" id="why">
+  <div class="wrap">
+    <div class="why-head reveal">
+      <div>
+        <div class="eyebrow">Why Study With Us?</div>
+        <h2>Six pillars that hold up <em>every learner</em></h2>
+      </div>
+      <p>At Digital Marketing School Milton Keynes we pair industry-informed teaching with structured academic and wellbeing support — so every student progresses with clarity and confidence.</p>
+    </div>
+
+    <div class="why-stage reveal" id="why-stage" tabindex="0">
+      <span class="why-bg-no" id="why-bg-no" aria-hidden="true">01</span>
+
+      <div class="why-stage-top">
+        <span class="why-count"><b id="why-cur">01</b> <i>/ 06</i></span>
+        <div class="why-nav">
+          <button class="why-arrow" id="why-prev" aria-label="Previous" data-cursor="Prev"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+          <button class="why-arrow" id="why-next" aria-label="Next" data-cursor="Next"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+
+      <div class="why-slides" id="why-slides">
+        <article class="why-slide active" data-i="0">
+          <span class="ws-tag">Our students, first</span>
+          <h3 class="ws-quote">Student-Centric Learning</h3>
+          <p class="ws-text">Our teaching is built around the needs, goals and experiences of our students — a supportive environment where you feel challenged and encouraged to succeed.</p>
+        </article>
+        <article class="why-slide" data-i="1">
+          <span class="ws-tag">Built around your life</span>
+          <h3 class="ws-quote">Flexible &amp; Accessible Education</h3>
+          <p class="ws-text">We know students balance study with work, family and other commitments. Flexible learning options and personalised support help you keep moving forward.</p>
+        </article>
+        <article class="why-slide" data-i="2">
+          <span class="ws-tag">Always supported</span>
+          <h3 class="ws-quote">Dedicated Support &amp; Wellbeing</h3>
+          <p class="ws-text">Comprehensive academic, pastoral and professional support runs through the whole student lifecycle — from your first enquiry to progression.</p>
+        </article>
+        <article class="why-slide" data-i="3">
+          <span class="ws-tag">Industry-relevant</span>
+          <h3 class="ws-quote">Market-Oriented Curriculum</h3>
+          <p class="ws-text">Courses are designed to reflect current market needs, helping you develop relevant knowledge and practical, job-ready skills employers value.</p>
+        </article>
+        <article class="why-slide" data-i="4">
+          <span class="ws-tag">Job-ready</span>
+          <h3 class="ws-quote">Career-Focused Curriculum</h3>
+          <p class="ws-text">Everything we teach supports progression into real-world roles — so you feel confident and genuinely prepared for the opportunities ahead.</p>
+        </article>
+        <article class="why-slide" data-i="5">
+          <span class="ws-tag">One-to-one</span>
+          <h3 class="ws-quote">Personalised &amp; Holistic Learning</h3>
+          <p class="ws-text">Lecturers take time to understand your goals, strengths and learning needs — providing tailored feedback and one-to-one guidance throughout.</p>
+        </article>
+      </div>
+
+      <div class="why-dots" id="why-dots">
+        <button class="why-dot active" data-i="0" aria-label="Pillar 1" data-cursor="Go"></button>
+        <button class="why-dot" data-i="1" aria-label="Pillar 2" data-cursor="Go"></button>
+        <button class="why-dot" data-i="2" aria-label="Pillar 3" data-cursor="Go"></button>
+        <button class="why-dot" data-i="3" aria-label="Pillar 4" data-cursor="Go"></button>
+        <button class="why-dot" data-i="4" aria-label="Pillar 5" data-cursor="Go"></button>
+        <button class="why-dot" data-i="5" aria-label="Pillar 6" data-cursor="Go"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="section testi" id="about">
+  <div class="testi-deco"></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="eyebrow" style="color:#fff">Student Stories</div>
+        <h2 style="margin-top:18px">From inquiries to <em>acceptance letters</em></h2>
+      </div>
+      <p>Real learners who have navigated our programmes with documented outcomes and a clearly confirmed path forward.</p>
+    </div>
+    <div class="testi-grid">
+      <article class="testi-card reveal" data-cursor="Read" data-cursor-variant="light">
+        <div class="testi-top">
+          <div class="testi-quote">&ldquo;</div>
+          <span class="cls">Sept 2024 Intake</span>
+        </div>
+        <p>The tutors genuinely cared about my progress. Structured guidance and 100% coursework assessment made my goal of studying at a top university feel achievable — and I got there.</p>
+        <div class="testi-foot">
+          <image-slot id="testi-1" class="av" shape="circle" fit="cover" src="assets/fig/photo-testimonial.png" placeholder="Add photo"></image-slot>
+          <div class="tf-id"><b>Sara Khan</b><small>Business Studies → University of Leicester</small></div>
+        </div>
+      </article>
+      <article class="testi-card reveal d1" data-cursor="Read" data-cursor-variant="light">
+        <div class="testi-top">
+          <div class="testi-quote">&ldquo;</div>
+          <span class="cls">Jan 2025 Intake</span>
+        </div>
+        <p>DMS gave me the confidence and the qualifications to apply with ambition. The personalised planning and steady tutor support helped me earn my university place.</p>
+        <div class="testi-foot">
+          <image-slot id="testi-2" class="av" shape="circle" fit="cover" placeholder="Add photo"></image-slot>
+          <div class="tf-id"><b>Fatima Noor</b><small>Computing → BSc Data Science</small></div>
+        </div>
+      </article>
+      <article class="testi-card reveal d2" data-cursor="Read" data-cursor-variant="light">
+        <div class="testi-top">
+          <div class="testi-quote">&ldquo;</div>
+          <span class="cls">Sept 2023 Intake</span>
+        </div>
+        <p>The wellbeing support made all the difference. I balanced part-time work with study and still progressed straight into a degree apprenticeship — something I never thought possible.</p>
+        <div class="testi-foot">
+          <image-slot id="testi-3" class="av" shape="circle" fit="cover" placeholder="Add photo"></image-slot>
+          <div class="tf-id"><b>Omar Yusuf</b><small>Health &amp; Social Care → Apprenticeship</small></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AWARDING BODIES (scroll-spy) ===================== -->
+<section class="section awards" id="accreditation">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="eyebrow">Accreditation</div>
+        <h2 style="margin-top:18px">Awarding organisations &amp; <em>regulatory bodies</em></h2>
+      </div>
+      <p>DMS Milton Keynes works with recognised awarding organisations and maintains registration with relevant regulatory bodies.</p>
+    </div>
+
+    <div class="awards-grid">
+      <!-- LEFT: sticky media that swaps with the active body -->
+      <div class="awards-media">
+        <div class="awards-stage">
+          <div class="aw-panel active" data-i="0" style="--pa:#2C2D71;--pb:#3d3f95">
+            <div class="awp-top"><span class="awp-kind">Regulatory body</span><span class="awp-no">01</span></div>
+            <span class="awp-bigno" aria-hidden="true">01</span>
+            <div class="awp-logo"><img src="assets/logos/ukrlp.png" alt="UK Register of Learning Providers" /></div>
+            <div class="awp-foot"><b>UK Register of Learning Providers</b><span>UKPRN 10091640 · Verified provider</span></div>
+            <div class="awp-glow"></div>
+          </div>
+          <div class="aw-panel" data-i="1" style="--pa:#F47D28;--pb:#ff9d54">
+            <div class="awp-top"><span class="awp-kind">Awarding organisation</span><span class="awp-no">02</span></div>
+            <span class="awp-bigno" aria-hidden="true">02</span>
+            <div class="awp-logo"><img src="assets/logos/othm.png" alt="OTHM Qualifications" /></div>
+            <div class="awp-foot"><b>OTHM Qualifications</b><span>Ofqual regulated · Partner since 2023</span></div>
+            <div class="awp-glow"></div>
+          </div>
+          <div class="aw-panel" data-i="2" style="--pa:#1B1C4B;--pb:#34357a">
+            <div class="awp-top"><span class="awp-kind">Awarding organisation</span><span class="awp-no">03</span></div>
+            <span class="awp-bigno" aria-hidden="true">03</span>
+            <div class="awp-logo"><img src="assets/logos/focus-awards.png" alt="Focus Awards" /></div>
+            <div class="awp-foot"><b>Focus Awards</b><span>Ofqual regulated · Vocational &amp; academic</span></div>
+            <div class="awp-glow"></div>
+          </div>
+          <div class="aw-panel" data-i="3" style="--pa:#2C2D71;--pb:#5b5cc4">
+            <div class="awp-top"><span class="awp-kind">Awarding body</span><span class="awp-no">04</span></div>
+            <span class="awp-bigno" aria-hidden="true">04</span>
+            <div class="awp-logo awp-logo--text"><span class="ncc">NCC<em>Education</em></span></div>
+            <div class="awp-foot"><b>NCC Education</b><span>Global progression · Partner since 2024</span></div>
+            <div class="awp-glow"></div>
+          </div>
+          <div class="aw-panel" data-i="4" style="--pa:#0B1132;--pb:#2a2f63">
+            <div class="awp-top"><span class="awp-kind">Regulatory body</span><span class="awp-no">05</span></div>
+            <span class="awp-bigno" aria-hidden="true">05</span>
+            <div class="awp-logo"><img src="assets/logos/ico.png" alt="Information Commissioner's Office" /></div>
+            <div class="awp-foot"><b>Information Commissioner's Office</b><span>ICO registered · Data protection</span></div>
+            <div class="awp-glow"></div>
+          </div>
+          <div class="aw-panel" data-i="5" style="--pa:#F47D28;--pb:#EA3F48">
+            <div class="awp-top"><span class="awp-kind">Government agency</span><span class="awp-no">06</span></div>
+            <span class="awp-bigno" aria-hidden="true">06</span>
+            <div class="awp-logo"><img src="assets/logos/esfa.png" alt="Education &amp; Skills Funding Agency" /></div>
+            <div class="awp-foot"><b>Education &amp; Skills Funding Agency</b><span>Funded provision · Post-16 compliance</span></div>
+            <div class="awp-glow"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: list that auto-advances -->
+      <div class="awards-list" id="awards-list">
+        <a class="aw-item active" data-i="0" href="https://www.ukrlp.co.uk" target="_blank" rel="noopener" data-cursor="Visit">
+          <span class="ai-no">01</span>
+          <span class="ai-main"><span class="ai-name">UK Register of Learning Providers</span><span class="ai-desc">Confirms DMS as a verified and recognised education provider within the UK, listed under UKPRN 10091640.</span></span>
+          <span class="ai-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="ai-line"><i></i></span>
+        </a>
+        <a class="aw-item" data-i="1" href="https://www.othm.org.uk" target="_blank" rel="noopener" data-cursor="Visit">
+          <span class="ai-no">02</span>
+          <span class="ai-main"><span class="ai-name">OTHM Qualifications</span><span class="ai-desc">A regulated awarding organisation delivering nationally recognised qualifications with clear progression pathways.</span></span>
+          <span class="ai-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="ai-line"><i></i></span>
+        </a>
+        <a class="aw-item" data-i="2" href="https://focusawards.org.uk" target="_blank" rel="noopener" data-cursor="Visit">
+          <span class="ai-no">03</span>
+          <span class="ai-main"><span class="ai-name">Focus Awards</span><span class="ai-desc">An Ofqual-regulated awarding organisation delivering vocational and academic qualifications to industry standards.</span></span>
+          <span class="ai-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="ai-line"><i></i></span>
+        </a>
+        <a class="aw-item" data-i="3" href="https://www.nccedu.com" target="_blank" rel="noopener" data-cursor="Visit">
+          <span class="ai-no">04</span>
+          <span class="ai-main"><span class="ai-name">NCC Education</span><span class="ai-desc">An internationally recognised awarding body with progression routes to UK and overseas universities.</span></span>
+          <span class="ai-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="ai-line"><i></i></span>
+        </a>
+        <a class="aw-item" data-i="4" href="https://ico.org.uk" target="_blank" rel="noopener" data-cursor="Visit">
+          <span class="ai-no">05</span>
+          <span class="ai-main"><span class="ai-name">Information Commissioner's Office</span><span class="ai-desc">Registered with the UK's independent authority for data protection and privacy compliance.</span></span>
+          <span class="ai-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="ai-line"><i></i></span>
+        </a>
+        <a class="aw-item" data-i="5" href="https://www.gov.uk/government/organisations/education-and-skills-funding-agency" target="_blank" rel="noopener" data-cursor="Visit">
+          <span class="ai-no">06</span>
+          <span class="ai-main"><span class="ai-name">Education &amp; Skills Funding Agency</span><span class="ai-desc">A government agency overseeing funding and compliance for post-16 education and training in England.</span></span>
+          <span class="ai-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="ai-line"><i></i></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GET IN TOUCH ===================== -->
+<section class="section contact-sec" id="get-in-touch">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="eyebrow">Get in Touch</div>
+        <h2 style="margin-top:18px">Let's start a <em>conversation</em></h2>
+      </div>
+      <p>Questions about a course, funding, or start dates? Talk to a real advisor — we typically reply within one working day.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- LEFT: info panel -->
+      <aside class="contact-aside reveal">
+        <div class="ca-glow"></div>
+        <div class="ca-live"><span class="ca-dot"></span> Admissions open · replies within 24h</div>
+        <h3 class="ca-title">Speak to the<br />admissions team</h3>
+        <p class="ca-sub">Milton Keynes campus &amp; online — whichever suits you best.</p>
+
+        <div class="ca-channels">
+          <a class="ca-channel" href="tel:+441908000000" data-cursor="Call">
+            <span class="cc-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2.1Z"/></svg></span>
+            <span class="cc-tx"><small>Call us</small><b>+44 1908 000 000</b></span>
+            <span class="cc-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </a>
+          <a class="ca-channel" href="mailto:admissions@dmschool.ac.uk" data-cursor="Email">
+            <span class="cc-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <span class="cc-tx"><small>Email us</small><b>admissions@dmschool.ac.uk</b></span>
+            <span class="cc-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </a>
+          <a class="ca-channel" href="#" data-cursor="Map">
+            <span class="cc-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span class="cc-tx"><small>Visit us</small><b>Milton Keynes, MK9 · United Kingdom</b></span>
+            <span class="cc-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </a>
+        </div>
+
+        <div class="ca-foot">
+          <span>Follow us</span>
+          <div class="ca-social">
+            <a href="#" data-cursor="Follow" data-cursor-variant="light" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M15 8h-2c-.6 0-1 .4-1 1v2h3l-.5 3H12v7H9v-7H7v-3h2V8.5C9 6 10.5 5 12.8 5H15z"/></svg></a>
+            <a href="#" data-cursor="Follow" data-cursor-variant="light" aria-label="LinkedIn"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M6 9H3v11h3zM4.5 3.5A1.7 1.7 0 1 0 4.5 7a1.7 1.7 0 0 0 0-3.5zM20 13c0-2.6-1.4-4-3.6-4-1.4 0-2.2.6-2.6 1.3V9H11v11h3v-6c0-1.2.6-2 1.7-2s1.6.8 1.6 2v6h3z"/></svg></a>
+            <a href="#" data-cursor="Follow" data-cursor-variant="light" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT: form -->
+      <form class="contact-form reveal d1" id="contact-form" novalidate>
+        <div class="cf-head">
+          <h3>Send us a message</h3>
+          <p>Tell us a little about you and we'll be in touch.</p>
+        </div>
+        <div class="cf-chips" role="group" aria-label="I'm interested in">
+          <span class="cf-chips-label">I'm interested in</span>
+          <div class="cf-chip-row">
+            <button type="button" class="cf-chip active" data-cursor="Pick">Business</button>
+            <button type="button" class="cf-chip" data-cursor="Pick">Health &amp; Social Care</button>
+            <button type="button" class="cf-chip" data-cursor="Pick">Computing</button>
+            <button type="button" class="cf-chip" data-cursor="Pick">Digital Marketing</button>
+          </div>
+        </div>
+        <div class="cf-2col">
+          <label class="cf-field">Full name<input type="text" name="name" placeholder="e.g. Sara Khan" autocomplete="name" required data-cursor="Type" /></label>
+          <label class="cf-field">Email<input type="email" name="email" placeholder="you@email.com" autocomplete="email" required data-cursor="Type" /></label>
+        </div>
+        <label class="cf-field">Message<textarea name="message" rows="3" placeholder="I'd like to know about start dates and funding…" data-cursor="Type"></textarea></label>
+        <div class="cf-bottom">
+          <span class="cf-trust"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> No spam · GDPR compliant</span>
+          <button type="submit" class="btn btn-primary cf-send" data-cursor="Send" data-cursor-variant="orange"><span>Send Message <i class="btn-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></button>
+        </div>
+        <div class="cf-done" id="cf-done">
+          <div class="cf-check"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <b>Message sent!</b>
+          <span id="cf-done-msg">Thanks — an advisor will reply within one working day.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</div><!-- /.page-main -->
+
+<!-- ===================== FOOTER REVEAL ===================== -->
+<div class="site-footer" id="site-footer">
+<!-- ===================== FOOTER CTA ===================== -->
+<section class="footer-cta" id="contact">
+  <a class="fc-marquee" href="#contact" data-cursor="Talk" data-cursor-variant="light" aria-label="Digital Marketing School">
+    <div class="fc-marquee-track" aria-hidden="true">
+      <span>Digital Marketing School</span><span class="fc-sep">/</span>
+      <span>Digital Marketing School</span><span class="fc-sep">/</span>
+      <span>Digital Marketing School</span><span class="fc-sep">/</span>
+      <span>Digital Marketing School</span><span class="fc-sep">/</span>
+    </div>
+  </a>
+  <div class="fc-dots">
+    <i style="background:#EA3F48"></i><i style="background:#fff"></i><i style="background:#F47D28"></i><i style="background:#48D18A"></i><i style="background:#fff"></i>
+    <i style="background:#F47D28"></i><i style="background:#fff"></i><i style="background:#EA3F48"></i><i style="background:#fff"></i><i style="background:#F47D28"></i>
+    <i style="background:#fff"></i><i style="background:#48D18A"></i><i style="background:#F47D28"></i><i style="background:#fff"></i><i style="background:#EA3F48"></i>
+  </div>
+  <div class="wrap">
+    <h2 class="reveal">There must be a reason you are here.</h2>
+    <p class="fc-sub reveal d1">Ready to begin? Talk to an admissions advisor about funded places, start dates and the right programme for your goals.</p>
+    <div class="fc-actions reveal d2">
+      <a class="btn btn-primary" href="#" data-cursor="Talk" data-cursor-variant="orange"><span>Contact admissions <i class="btn-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></a>
+      <a class="fc-link" href="#programmes" data-cursor="Browse" data-cursor-variant="light">Find a course</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-nav">
+      <a href="#about" data-cursor="Open" data-cursor-variant="light">ABOUT US</a>
+      <a href="#programmes" data-cursor="Open" data-cursor-variant="light">COURSES</a>
+      <a href="#" data-cursor="Open" data-cursor-variant="light">BLOGS</a>
+      <a href="#" data-cursor="Open" data-cursor-variant="light">CAREERS</a>
+    </div>
+    <div class="footer-bottom">
+      <a class="footer-brand brand" href="#top" data-cursor="Home" data-cursor-variant="light">
+        <img class="brand-logo" src="assets/dms-logo-white.png" alt="Digital Marketing School" />
+      </a>
+      <div class="footer-social">
+        <a href="#" data-cursor="Follow" data-cursor-variant="light" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15 8h-2c-.6 0-1 .4-1 1v2h3l-.5 3H12v7H9v-7H7v-3h2V8.5C9 6 10.5 5 12.8 5H15z"/></svg></a>
+        <a href="#" data-cursor="Follow" data-cursor-variant="light" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 3h3l-7 8 8 10h-6l-5-6-5 6H3l7-9L2 3h6l4 5z"/></svg></a>
+        <a href="#" data-cursor="Follow" data-cursor-variant="light" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6 9H3v11h3zM4.5 3.5A1.7 1.7 0 1 0 4.5 7a1.7 1.7 0 0 0 0-3.5zM20 13c0-2.6-1.4-4-3.6-4-1.4 0-2.2.6-2.6 1.3V9H11v11h3v-6c0-1.2.6-2 1.7-2s1.6.8 1.6 2v6h3z"/></svg></a>
+        <a href="#" data-cursor="Follow" data-cursor-variant="light" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+      <div class="footer-copy">Copyright © <span id="year">2026</span> Digital Marketing School. All Rights Reserved.</div>
+    </div>
+  </div>
+</footer>
+</div><!-- /.site-footer -->
+
+<!-- ===================== SEARCH OVERLAY ===================== -->
+<div class="search-overlay" id="search-overlay" aria-hidden="true">
+  <div class="search-backdrop" id="search-backdrop"></div>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search">
+    <button class="search-close" id="search-close" aria-label="Close search" data-cursor="Close"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <span class="search-eyebrow">Search DMS</span>
+    <div class="search-input-row">
+      <svg class="search-ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input id="search-input" type="text" placeholder="Search courses, pages, awarding bodies…" autocomplete="off" spellcheck="false" />
+    </div>
+    <div class="search-suggest" id="search-suggest">
+      <span class="ss-label">Popular</span>
+      <div class="ss-tags" id="ss-tags"></div>
+    </div>
+    <div class="search-results" id="search-results"></div>
+  </div>
+</div>
+
+<script src="assets/image-slot.js"></script>
+<script src="cursor.js"></script>
+<script src="main.js"></script>
+<script src="lead-form.js"></script>
+<script src="search.js"></script>
+<script src="reveal.js"></script>
+<!-- ===================== APPLY / ENQUIRE MODAL ===================== -->
+<div class="apply-overlay" id="apply-modal" aria-hidden="true">
+  <div class="apply-backdrop" data-apply-close></div>
+  <div class="apply-dialog" role="dialog" aria-modal="true" aria-labelledby="apply-title">
+    <button class="apply-x" id="apply-close" aria-label="Close" data-cursor="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+
+    <div class="apply-aside">
+      <img class="apply-logo" src="assets/dms-logo-white.png" alt="Digital Marketing School" />
+      <h3 class="apply-aside-title">Start your journey with DMS</h3>
+      <p class="apply-aside-sub">Create an account or enquire — and take the next step toward a recognised UK qualification.</p>
+      <ul class="apply-points">
+        <li><span class="ap-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> 100% coursework — no exams</li>
+        <li><span class="ap-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Flexible start dates</li>
+        <li><span class="ap-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Dedicated tutor support</li>
+      </ul>
+      <div class="apply-aside-foot">UKPRN 10091640 · Milton Keynes</div>
+    </div>
+
+    <div class="apply-main">
+      <div class="apply-tabs" role="tablist">
+        <button class="apply-tab active" data-tab="signin" role="tab" data-cursor="Select">Sign In</button>
+        <button class="apply-tab" data-tab="signup" role="tab" data-cursor="Select">Sign Up</button>
+        <button class="apply-tab" data-tab="enquire" role="tab" data-cursor="Select">Enquire</button>
+        <span class="apply-tab-ind" id="apply-ind"></span>
+      </div>
+
+      <!-- SIGN IN -->
+      <form class="apply-pane active" data-pane="signin" novalidate>
+        <h2 class="apply-h" id="apply-title">Welcome back</h2>
+        <p class="apply-p">Sign in to track your application and saved courses.</p>
+        <label class="af">Email address<input type="email" name="email" placeholder="you@email.com" autocomplete="email" required data-cursor="Type" /></label>
+        <label class="af">Password<input type="password" name="password" placeholder="••••••••" autocomplete="current-password" required data-cursor="Type" /></label>
+        <div class="af-row"><label class="af-check"><input type="checkbox" /> Remember me</label><a href="#" class="af-link">Forgot password?</a></div>
+        <button type="submit" class="btn btn-primary apply-submit" data-cursor="Sign in" data-cursor-variant="orange"><span>Sign In <i class="btn-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></button>
+        <p class="apply-alt">New to DMS? <button type="button" class="af-switch" data-goto="signup">Create an account</button></p>
+      </form>
+
+      <!-- SIGN UP -->
+      <form class="apply-pane" data-pane="signup" novalidate>
+        <h2 class="apply-h">Create your account</h2>
+        <p class="apply-p">Join DMS and start your application in minutes.</p>
+        <div class="af-2col">
+          <label class="af">Full name<input type="text" name="name" placeholder="e.g. Sara Khan" autocomplete="name" required data-cursor="Type" /></label>
+          <label class="af">Phone<input type="tel" name="phone" placeholder="07… " autocomplete="tel" data-cursor="Type" /></label>
+        </div>
+        <label class="af">Email address<input type="email" name="email" placeholder="you@email.com" autocomplete="email" required data-cursor="Type" /></label>
+        <label class="af">Course of interest
+          <select name="course" required data-cursor="Select">
+            <option value="">Choose a programme…</option>
+            <option>Business Studies</option>
+            <option>Health &amp; Social Care</option>
+            <option>Computing</option>
+            <option>Digital Marketing</option>
+            <option>Business Management</option>
+          </select>
+        </label>
+        <label class="af">Password<input type="password" name="password" placeholder="Create a password" autocomplete="new-password" required data-cursor="Type" /></label>
+        <label class="af-check af-terms"><input type="checkbox" required /> I agree to the privacy policy &amp; terms.</label>
+        <button type="submit" class="btn btn-primary apply-submit" data-cursor="Create" data-cursor-variant="orange"><span>Create Account <i class="btn-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></button>
+        <p class="apply-alt">Already have an account? <button type="button" class="af-switch" data-goto="signin">Sign in</button></p>
+      </form>
+
+      <!-- ENQUIRE -->
+      <form class="apply-pane" data-pane="enquire" novalidate>
+        <h2 class="apply-h">Make an enquiry</h2>
+        <p class="apply-p">Tell us what you'd like to know — an advisor will be in touch.</p>
+        <div class="af-2col">
+          <label class="af">Full name<input type="text" name="name" placeholder="e.g. Omar Yusuf" autocomplete="name" required data-cursor="Type" /></label>
+          <label class="af">Email<input type="email" name="email" placeholder="you@email.com" autocomplete="email" required data-cursor="Type" /></label>
+        </div>
+        <label class="af">Course of interest
+          <select name="course" data-cursor="Select">
+            <option value="">Any / not sure yet</option>
+            <option>Business Studies</option>
+            <option>Health &amp; Social Care</option>
+            <option>Computing</option>
+            <option>Digital Marketing</option>
+            <option>Business Management</option>
+          </select>
+        </label>
+        <label class="af">Your message<textarea name="message" rows="3" placeholder="I'd like to know about start dates and funding…" data-cursor="Type"></textarea></label>
+        <button type="submit" class="btn btn-primary apply-submit" data-cursor="Send" data-cursor-variant="orange"><span>Send Enquiry <i class="btn-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></button>
+      </form>
+
+      <!-- SUCCESS -->
+      <div class="apply-done" data-pane="done">
+        <div class="apply-check"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h2 class="apply-h" id="apply-done-title">You're all set.</h2>
+        <p class="apply-p" id="apply-done-msg">Thanks — we've received your details and an advisor will be in touch shortly.</p>
+        <button type="button" class="btn btn-primary apply-submit" data-apply-close data-cursor="Close" data-cursor-variant="orange"><span>Done</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="apply-modal.js"></script>
+<script>
+/* Standalone bundle: image-slot reads its src attribute via JS, so the bundler
+   can't inline it. When window.__resources is present (bundled file only),
+   swap each author-src slot to its inlined blob URL. No-op in the live project. */
+(function () {
+  var map = { 'hero-photo': 'photoWhy', 'cat-business': 'photoWhy', 'cat-marketing': 'photoTesti' };
+  function apply(R) {
+    Object.keys(map).forEach(function (id) {
+      var el = document.getElementById(id), u = R[map[id]];
+      if (el && u) el.setAttribute('src', u);
+    });
+  }
+  var tries = 0;
+  (function go() {
+    if (window.__resources) { apply(window.__resources); }
+    else if (tries++ < 120) { setTimeout(go, 30); }
+  })();
+})();
+</script>
+
+<template id="__bundler_thumbnail" data-bg-color="#2C2D71">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#2C2D71"/>
+    <g transform="translate(600 360)">
+      <path d="M0 -120 L150 -52 L0 16 L-150 -52 Z" fill="#ffffff"/>
+      <path d="M-92 -28 L-92 44 C-92 44 -44 80 0 80 C44 80 92 44 92 44 L92 -28 L0 18 Z" fill="#ffffff" opacity="0.55"/>
+      <path d="M150 -52 L150 36" stroke="#F47D28" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="150" cy="52" r="14" fill="#F47D28"/>
+    </g>
+    <text x="600" y="600" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="84" font-weight="800" letter-spacing="6" fill="#ffffff">DMS</text>
+    <text x="600" y="660" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="26" font-weight="700" letter-spacing="8" fill="#CECEFF">DIGITAL MARKETING SCHOOL</text>
+  </svg>
+</template>
+</body>
+</html>
