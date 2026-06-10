@@ -282,15 +282,13 @@
 .adv-btn-label { display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--indigo-ink); font-weight: 600; font-size: 14.5px; white-space: nowrap; transition: background .45s var(--ease), color .45s, border-color .45s, padding .45s var(--ease), border-radius .45s var(--ease); }
 .adv-btn-ic { width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); background: #fff; display: grid; place-items: center; color: var(--orange); transition: background .45s var(--ease), color .45s, border-color .45s, transform .5s var(--ease), border-radius .45s var(--ease); }
 .adv-btn-ic svg { transition: transform .5s var(--ease); }
-/* merge into one solid button on hover */
-.adv-btn:hover, .adv-card:hover .adv-btn { gap: 0; }
+/* merge into one button on hover — full-round dark pill + orange circle overlapping its end */
+.adv-btn-ic { position: relative; z-index: 1; }
 .adv-btn:hover .adv-btn-label, .adv-card:hover .adv-btn-label {
-  background: var(--orange); color: #fff; border-color: var(--orange);
-  border-top-right-radius: 0; border-bottom-right-radius: 0; padding-right: 14px;
+  background: var(--indigo); color: #fff; border-color: var(--indigo); padding-right: 32px;
 }
 .adv-btn:hover .adv-btn-ic, .adv-card:hover .adv-btn-ic {
-  background: var(--orange); color: #fff; border-color: var(--orange);
-  border-top-left-radius: 0; border-bottom-left-radius: 0;
+  background: var(--orange); color: #fff; border-color: var(--orange); margin-left: -24px;
 }
 .adv-btn:hover .adv-btn-ic svg, .adv-card:hover .adv-btn-ic svg { transform: rotate(45deg); }
 
